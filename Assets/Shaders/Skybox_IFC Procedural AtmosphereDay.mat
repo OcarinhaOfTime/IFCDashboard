@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Skybox_IFC Procedural AtmosphereDay
+  m_Shader: {fileID: 4800000, guid: 50c659ebce8d43b70883ac6ecb45f937, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _CloudBillowStrength: 0.42
+    - _CloudContrast: 1.45
+    - _CloudCoverage: 0.582
+    - _CloudDetailScale: 2.15
+    - _CloudEvolution: 0.2
+    - _CloudEvolutionSpeed: 0.085
+    - _CloudFlowVariation: 0.42
+    - _CloudGain: 0.5
+    - _CloudHorizonFadeEnd: 0.16
+    - _CloudHorizonFadeStart: 0.025
+    - _CloudLacunarity: 2.02
+    - _CloudOctaves: 5
+    - _CloudOpacity: 0.78
+    - _CloudProjectionFloor: 0.09
+    - _CloudScale: 0.3
+    - _CloudSoftness: 0.1
+    - _CloudSpeed: 0.018
+    - _Exposure: 1
+    - _GroundGradientPower: 0.85
+    - _HorizonBlend: 0.045
+    - _HorizonHazeSharpness: 9
+    - _HorizonHazeStrength: 1
+    - _SkyGradientPower: 0.98
+    - _SunDiskIntensity: 1.65
+    - _SunDiskSize: 0.85
+    - _SunDiskSoftness: 0.3
+    - _SunGlowExponent: 52
+    - _SunGlowIntensity: 0.42
+    - _UseMainLight: 1
+    - _WarpScale: 0.62
+    - _WarpSpeed: 0.035
+    - _WarpStrength: 1.15
+    m_Colors:
+    - _CloudLightColor: {r: 0.58, g: 0.61, b: 0.64, a: 1}
+    - _CloudShadowColor: {r: 0.1, g: 0.12, b: 0.15, a: 1}
+    - _CloudWind: {r: 1, g: 0.18, b: 0, a: 0}
+    - _GroundBottomColor: {r: 0.035, g: 0.03, b: 0.026, a: 1}
+    - _GroundHorizonColor: {r: 0.17, g: 0.2, b: 0.17, a: 1}
+    - _HorizonColor: {r: 0.38, g: 0.48, b: 0.58, a: 1}
+    - _HorizonHazeColor: {r: 0.34, g: 0.41, b: 0.45, a: 1}
+    - _ManualSunDirection: {r: 0.25, g: 0.55, b: 0.8, a: 0}
+    - _SunColor: {r: 1, g: 0.7, b: 0.42, a: 1}
+    - _ZenithColor: {r: 0.055, g: 0.11, b: 0.22, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

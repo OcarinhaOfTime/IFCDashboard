@@ -1,0 +1,78 @@
+<script>
+  window.fdUnityBridge = {
+    instance: null,
+    pendingTemperatureUpdates: []
+  };
+
+  function sendTemperaturePayload(payload) {
+    window.fdUnityBridge.instance.SendMessage(
+      "WebGLBridge",
+      "UpdateTemperatureFromJs",
+      JSON.stringify(payload)
+    );
+  }
+
+  window.UpdateTemperature = function (buildingID, value) {
+    var numericValue = Number(value);
+
+    if (!buildingID || !Number.isFinite(numericValue)) {
+      console.error(
+        "UpdateTemperature requires a building ID and numeric value.",
+        buildingID,
+        value
+      );
+      return false;
+    }
+
+    var payload = {
+      buildingId: String(buildingID),
+      value: numericValue
+    };
+
+    if (!window.fdUnityBridge.instance) {
+      window.fdUnityBridge.pendingTemperatureUpdates.push(payload);
+      return true;
+    }
+
+    sendTemperaturePayload(payload);
+    return true;
+  };
+
+  function flushPendingTemperatureUpdates() {
+    while (
+      window.fdUnityBridge.pendingTemperatureUpdates.length > 0
+    ) {
+      sendTemperaturePayload(
+        window.fdUnityBridge.pendingTemperatureUpdates.shift()
+      );
+    }
+  }
+
+  window.onUnityBuildingClicked = function (
+    buildingID,
+    displayName,
+    websiteRoute
+  ) {
+    alert(
+      "Unity selected: " +
+      displayName +
+      " (" +
+      buildingID +
+      ")"
+    );
+
+    console.log("Unity building selection", {
+      buildingID: buildingID,
+      displayName: displayName,
+      websiteRoute: websiteRoute
+    });
+  };
+</script>
+
+<!--
+Inside your existing createUnityInstance(...).then block, add:
+
+window.fdUnityBridge.instance = unityInstance;
+flushPendingTemperatureUpdates();
+window.UpdateTemperature("WBC111F", 22.4);
+-->

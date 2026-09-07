@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta
+    name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no, shrink-to-fit=yes"
+  >
+
+  <title>Future Decisions | {{{ PRODUCT_NAME }}}</title>
+
+  <link
+    rel="icon"
+    type="image/png"
+    href="TemplateData/future-decisions-logo.png"
+  >
+
+#if SHOW_DIAGNOSTICS
+  <link rel="stylesheet" href="<<<TemplateData/diagnostics.css>>>">
+  <script src="<<<TemplateData/diagnostics.js>>>"></script>
+#endif
+
+  <style>
+    :root {
+      --fd-red: #a51f24;
+      --fd-red-bright: #c73236;
+      --fd-red-dark: #651217;
+      --fd-white: #f7f5f2;
+      --fd-muted: #b9b5b1;
+      --fd-panel: rgba(16, 17, 19, 0.78);
+      --fd-border: rgba(255, 255, 255, 0.14);
+      --fd-shadow: rgba(0, 0, 0, 0.45);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      background:
+        radial-gradient(
+          circle at 18% 0%,
+          rgba(165, 31, 36, 0.28),
+          transparent 36%
+        ),
+        linear-gradient(145deg, #17191c 0%, #090a0c 68%, #12080a 100%);
+      color: var(--fd-white);
+      font-family:
+        Inter,
+        ui-sans-serif,
+        system-ui,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        sans-serif;
+    }
+
+    button,
+    a {
+      font: inherit;
+    }
+
+    #fd-app {
+      width: 100%;
+      height: 100%;
+      display: grid;
+      grid-template-rows: minmax(0, 1fr) auto;
+      isolation: isolate;
+    }
+
+    #fd-stage {
+      position: relative;
+      min-width: 0;
+      min-height: 0;
+      overflow: hidden;
+      background: #090a0c;
+    }
+
+    #unity-canvas {
+      display: block;
+      width: 100%;
+      height: 100%;
+      border: 0;
+      outline: none;
+      background:
+        {{{ BACKGROUND_FILENAME
+          ? 'url(\'Build/' + BACKGROUND_FILENAME.replace(/'/g, '%27') + '\') center / cover'
+          : BACKGROUND_COLOR }}};
+    }
+
+    /*
+     * The header floats above Unity and deliberately stays compact so it
+     * feels like part of the dashboard rather than a separate web page.
+     */
+    #fd-header {
+      position: absolute;
+      z-index: 20;
+      top: 18px;
+      left: 18px;
+      right: 18px;
+
+      min-height: 62px;
+      padding: 10px 12px 10px 14px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 18px;
+
+      border: 1px solid var(--fd-border);
+      border-radius: 16px;
+      background: linear-gradient(
+        110deg,
+        rgba(19, 20, 23, 0.90),
+        rgba(19, 20, 23, 0.66)
+      );
+      box-shadow: 0 18px 55px var(--fd-shadow);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+    }
+
+    #fd-brand {
+      min-width: 0;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      text-align: left;
+    }
+
+    #fd-brand-logo {
+      width: 42px;
+      height: 42px;
+      flex: 0 0 auto;
+      object-fit: contain;
+      filter: drop-shadow(0 5px 14px rgba(0, 0, 0, 0.35));
+    }
+
+    #fd-brand-copy {
+      min-width: 0;
+    }
+
+    #fd-company-name {
+      margin: 0;
+      color: var(--fd-white);
+      font-size: 0.72rem;
+      font-weight: 750;
+      letter-spacing: 0.17em;
+      line-height: 1.15;
+      text-transform: uppercase;
+    }
+
+    #fd-project-name {
+      margin: 4px 0 0;
+      overflow: hidden;
+      color: rgba(247, 245, 242, 0.82);
+      font-size: 0.88rem;
+      font-weight: 480;
+      line-height: 1.2;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #fd-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .fd-button {
+      height: 40px;
+      padding: 0 14px;
+
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+
+      border: 1px solid var(--fd-border);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.07);
+      color: var(--fd-white);
+      cursor: pointer;
+
+      font-size: 0.82rem;
+      font-weight: 650;
+      line-height: 1;
+      text-decoration: none;
+
+      transition:
+        transform 150ms ease,
+        border-color 150ms ease,
+        background 150ms ease,
+        opacity 150ms ease;
+    }
+
+    .fd-button:hover {
+      transform: translateY(-1px);
+      border-color: rgba(255, 255, 255, 0.30);
+      background: rgba(255, 255, 255, 0.12);
+    }
+
+    .fd-button:focus-visible {
+      outline: 3px solid rgba(199, 50, 54, 0.42);
+      outline-offset: 2px;
+    }
+
+    .fd-button[disabled] {
+      opacity: 0.48;
+      cursor: wait;
+      transform: none;
+    }
+
+    .fd-button-primary {
+      border-color: rgba(199, 50, 54, 0.72);
+      background: linear-gradient(
+        135deg,
+        var(--fd-red-bright),
+        var(--fd-red)
+      );
+      box-shadow: 0 8px 24px rgba(165, 31, 36, 0.25);
+    }
+
+    .fd-button-primary:hover {
+      border-color: rgba(255, 255, 255, 0.38);
+      background: linear-gradient(
+        135deg,
+        #d83b40,
+        var(--fd-red)
+      );
+    }
+
+    .fd-button svg {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 auto;
+      fill: none;
+      stroke: currentColor;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 1.8;
+    }
+
+    #fd-loading-overlay {
+      position: absolute;
+      z-index: 30;
+      inset: 0;
+
+      display: grid;
+      place-items: center;
+
+      padding: 24px;
+      background:
+        radial-gradient(
+          circle at center,
+          rgba(165, 31, 36, 0.18),
+          transparent 36%
+        ),
+        rgba(8, 9, 11, 0.88);
+
+      opacity: 1;
+      visibility: visible;
+      transition:
+        opacity 420ms ease,
+        visibility 420ms ease;
+    }
+
+    #fd-loading-overlay.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    #fd-loading-card {
+      width: min(430px, 100%);
+      padding: 30px;
+
+      border: 1px solid var(--fd-border);
+      border-radius: 24px;
+      background: var(--fd-panel);
+      box-shadow: 0 30px 90px rgba(0, 0, 0, 0.48);
+      backdrop-filter: blur(18px);
+      -webkit-backdrop-filter: blur(18px);
+    }
+
+    #fd-loading-logo {
+      width: 76px;
+      height: 76px;
+      object-fit: contain;
+      filter: drop-shadow(0 12px 30px rgba(0, 0, 0, 0.42));
+    }
+
+    #fd-loading-kicker {
+      margin: 20px 0 0;
+      color: #e6a5a7;
+      font-size: 0.70rem;
+      font-weight: 750;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    #fd-loading-title {
+      margin: 8px 0 0;
+      font-size: clamp(1.35rem, 4vw, 1.9rem);
+      font-weight: 680;
+      letter-spacing: -0.025em;
+    }
+
+    #fd-loading-copy {
+      margin: 9px auto 0;
+      max-width: 34ch;
+      color: var(--fd-muted);
+      font-size: 0.90rem;
+      line-height: 1.55;
+    }
+
+    #fd-progress-track {
+      position: relative;
+      height: 7px;
+      margin-top: 26px;
+      overflow: hidden;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.10);
+    }
+
+    #fd-progress-bar {
+      width: 0%;
+      height: 100%;
+      border-radius: inherit;
+      background: linear-gradient(
+        90deg,
+        var(--fd-red),
+        #ed6a6e
+      );
+      box-shadow: 0 0 24px rgba(199, 50, 54, 0.55);
+      transition: width 120ms linear;
+    }
+
+    #fd-loading-status {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      color: rgba(247, 245, 242, 0.64);
+      font-size: 0.76rem;
+    }
+
+    #fd-banner {
+      position: absolute;
+      z-index: 40;
+      right: 18px;
+      bottom: 18px;
+      width: min(440px, calc(100% - 36px));
+      display: grid;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .fd-banner-message {
+      padding: 12px 14px;
+      border: 1px solid var(--fd-border);
+      border-radius: 12px;
+      background: rgba(18, 19, 22, 0.94);
+      box-shadow: 0 18px 48px rgba(0, 0, 0, 0.35);
+      color: var(--fd-white);
+      font-size: 0.82rem;
+      line-height: 1.45;
+      text-align: left;
+      pointer-events: auto;
+    }
+
+    .fd-banner-warning {
+      border-color: rgba(237, 180, 72, 0.62);
+    }
+
+    .fd-banner-error {
+      border-color: rgba(237, 71, 76, 0.72);
+      background: rgba(73, 15, 18, 0.96);
+    }
+
+
+    #fd-control-panel {
+      position: relative;
+      z-index: 50;
+      padding: 13px 18px;
+      border-top: 1px solid var(--fd-border);
+      background:
+        linear-gradient(
+          100deg,
+          rgba(31, 18, 20, 0.96),
+          rgba(17, 18, 21, 0.98)
+        );
+      box-shadow: 0 -14px 42px rgba(0, 0, 0, 0.26);
+    }
+
+    #fd-temperature-form {
+      width: min(980px, 100%);
+      margin: 0 auto;
+
+      display: grid;
+      grid-template-columns:
+        minmax(170px, auto)
+        minmax(150px, 230px)
+        auto
+        minmax(150px, 1fr);
+      align-items: center;
+      gap: 10px;
+    }
+
+    #fd-temperature-target {
+      min-width: 0;
+      display: grid;
+      gap: 2px;
+      text-align: left;
+    }
+
+    #fd-temperature-target span {
+      color: var(--fd-muted);
+      font-size: 0.67rem;
+      font-weight: 700;
+      letter-spacing: 0.11em;
+      text-transform: uppercase;
+    }
+
+    #fd-selected-building {
+      overflow: hidden;
+      color: var(--fd-white);
+      font-size: 0.92rem;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #fd-temperature-input-wrap {
+      height: 40px;
+      display: flex;
+      align-items: center;
+      overflow: hidden;
+
+      border: 1px solid var(--fd-border);
+      border-radius: 11px;
+      background: rgba(255, 255, 255, 0.075);
+    }
+
+    #fd-temperature-input-wrap:focus-within {
+      border-color: rgba(199, 50, 54, 0.85);
+      box-shadow: 0 0 0 3px rgba(199, 50, 54, 0.17);
+    }
+
+    #fd-temperature-input {
+      min-width: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 12px;
+
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--fd-white);
+
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    #fd-temperature-input::placeholder {
+      color: rgba(247, 245, 242, 0.38);
+    }
+
+    #fd-temperature-unit {
+      padding-right: 12px;
+      color: var(--fd-muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    #fd-temperature-status {
+      min-width: 0;
+      overflow: hidden;
+      color: rgba(247, 245, 242, 0.62);
+      font-size: 0.76rem;
+      line-height: 1.35;
+      text-align: left;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    #fd-temperature-status.is-success {
+      color: #a9d7b0;
+    }
+
+    #fd-temperature-status.is-error {
+      color: #f0a1a4;
+    }
+
+    .fd-visually-hidden {
+      position: absolute !important;
+      width: 1px !important;
+      height: 1px !important;
+      padding: 0 !important;
+      margin: -1px !important;
+      overflow: hidden !important;
+      clip: rect(0, 0, 0, 0) !important;
+      white-space: nowrap !important;
+      border: 0 !important;
+    }
+
+#if SHOW_DIAGNOSTICS
+    #diagnostics-icon {
+      position: absolute;
+      z-index: 24;
+      right: 18px;
+      bottom: 18px;
+      width: 34px;
+      height: 34px;
+      cursor: pointer;
+    }
+#endif
+
+    @media (max-width: 720px) {
+      #fd-header {
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        min-height: 56px;
+        padding: 8px 9px 8px 11px;
+        border-radius: 14px;
+      }
+
+      #fd-brand-logo {
+        width: 36px;
+        height: 36px;
+      }
+
+      #fd-company-name {
+        font-size: 0.64rem;
+      }
+
+      #fd-project-name {
+        max-width: 34vw;
+        font-size: 0.76rem;
+      }
+
+      .fd-button {
+        width: 40px;
+        padding: 0;
+      }
+
+      .fd-button-label {
+        display: none;
+      }
+
+      #fd-website-link {
+        display: none;
+      }
+
+      #fd-loading-card {
+        padding: 25px 22px;
+      }
+
+      #fd-control-panel {
+        padding: 10px;
+      }
+
+      #fd-temperature-form {
+        grid-template-columns: minmax(0, 1fr) auto;
+        gap: 8px;
+      }
+
+      #fd-temperature-target,
+      #fd-temperature-status {
+        grid-column: 1 / -1;
+      }
+
+      #fd-temperature-status {
+        white-space: normal;
+      }
+
+      #fd-temperature-submit {
+        width: auto;
+        padding: 0 12px;
+      }
+
+      #fd-temperature-submit .fd-button-label {
+        display: inline;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main id="fd-app">
+    <section id="fd-stage">
+          <canvas
+            id="unity-canvas"
+            width={{{ WIDTH }}}
+            height={{{ HEIGHT }}}
+            tabindex="-1"
+            aria-label="{{{ PRODUCT_NAME }}} interactive 3D dashboard"
+          ></canvas>
+
+          <header id="fd-header">
+            <div id="fd-brand">
+              <img
+                id="fd-brand-logo"
+                src="TemplateData/future-decisions-logo.png"
+                alt="Future Decisions"
+              >
+
+              <div id="fd-brand-copy">
+                <p id="fd-company-name">Future Decisions</p>
+                <p id="fd-project-name">
+                  {{{ PRODUCT_NAME }}} · Interactive site dashboard
+                </p>
+              </div>
+            </div>
+
+            <nav id="fd-actions" aria-label="Application controls">
+              <a
+                id="fd-website-link"
+                class="fd-button"
+                href="https://www.futuredecisions.ai/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>Future Decisions</span>
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M7 17 17 7"></path>
+                  <path d="M8 7h9v9"></path>
+                </svg>
+              </a>
+
+              <button
+                id="fd-fullscreen-button"
+                class="fd-button fd-button-primary"
+                type="button"
+                disabled
+              >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M8 3H3v5"></path>
+                  <path d="m3 3 6 6"></path>
+                  <path d="M16 3h5v5"></path>
+                  <path d="m21 3-6 6"></path>
+                  <path d="M8 21H3v-5"></path>
+                  <path d="m3 21 6-6"></path>
+                  <path d="M16 21h5v-5"></path>
+                  <path d="m21 21-6-6"></path>
+                </svg>
+                <span class="fd-button-label">Fullscreen</span>
+              </button>
+            </nav>
+          </header>
+
+          <section
+            id="fd-loading-overlay"
+            aria-live="polite"
+            aria-busy="true"
+          >
+            <div id="fd-loading-card">
+              <img
+                id="fd-loading-logo"
+                src="TemplateData/future-decisions-logo.png"
+                alt=""
+              >
+
+              <p id="fd-loading-kicker">
+                AI-augmented building performance
+              </p>
+
+              <h1 id="fd-loading-title">
+                Loading {{{ PRODUCT_NAME }}}
+              </h1>
+
+              <p id="fd-loading-copy">
+                Preparing the interactive site model and dashboard environment.
+              </p>
+
+              <div id="fd-progress-track" aria-hidden="true">
+                <div id="fd-progress-bar"></div>
+              </div>
+
+              <div id="fd-loading-status">
+                <span id="fd-loading-stage">Starting engine…</span>
+                <span id="fd-loading-percent">0%</span>
+              </div>
+            </div>
+          </section>
+
+          <div id="fd-banner" aria-live="assertive"></div>
+
+#if SHOW_DIAGNOSTICS
+          <img
+            id="diagnostics-icon"
+            src="TemplateData/webmemd-icon.png"
+            alt="Open Unity diagnostics"
+          >
+#endif
+    </section>
+
+
+    <section
+      id="fd-control-panel"
+      aria-label="Unity interoperability test controls"
+    >
+      <form id="fd-temperature-form">
+        <div id="fd-temperature-target">
+          <span>Selected facility</span>
+          <strong id="fd-selected-building">WBC111F</strong>
+        </div>
+
+        <label
+          class="fd-visually-hidden"
+          for="fd-temperature-input"
+        >
+          Temperature
+        </label>
+
+        <div id="fd-temperature-input-wrap">
+          <input
+            id="fd-temperature-input"
+            type="number"
+            inputmode="decimal"
+            step="0.1"
+            placeholder="Enter a value"
+            autocomplete="off"
+            required
+          >
+          <span id="fd-temperature-unit">°C</span>
+        </div>
+
+        <button
+          id="fd-temperature-submit"
+          class="fd-button fd-button-primary"
+          type="submit"
+        >
+          <span class="fd-button-label">Send to Unity</span>
+        </button>
+
+        <span
+          id="fd-temperature-status"
+          aria-live="polite"
+        >
+          Click a building in Unity, enter a value, and submit it.
+        </span>
+      </form>
+    </section>
+  </main>
+
+  <script src="Build/{{{ LOADER_FILENAME }}}"></script>
+
+  <script>
+    const canvas = document.querySelector("#unity-canvas");
+    const loadingOverlay = document.querySelector("#fd-loading-overlay");
+    const progressBar = document.querySelector("#fd-progress-bar");
+    const progressPercent = document.querySelector("#fd-loading-percent");
+    const loadingStage = document.querySelector("#fd-loading-stage");
+    const fullscreenButton = document.querySelector("#fd-fullscreen-button");
+    const bannerContainer = document.querySelector("#fd-banner");
+    const temperatureForm = document.querySelector("#fd-temperature-form");
+    const temperatureInput = document.querySelector("#fd-temperature-input");
+    const temperatureStatus = document.querySelector("#fd-temperature-status");
+    const selectedBuildingLabel =
+      document.querySelector("#fd-selected-building");
+
+    /*
+     * Shared state for the website ↔ Unity bridge.
+     *
+     * WBC111F is only the initial proof-of-concept target. Clicking a
+     * facility inside Unity replaces it with the selected facility ID.
+     */
+    window.fdUnityBridge = {
+      instance: null,
+      selectedBuildingId: "WBC111F",
+      pendingTemperatureUpdates: []
+    };
+
+    function setTemperatureStatus(message, state) {
+      temperatureStatus.textContent = message;
+      temperatureStatus.classList.remove("is-success", "is-error");
+
+      if (state) {
+        temperatureStatus.classList.add(`is-${state}`);
+      }
+    }
+
+    function sendTemperaturePayload(payload) {
+      window.fdUnityBridge.instance.SendMessage(
+        "WebGLBridge",
+        "UpdateTemperatureFromJs",
+        JSON.stringify(payload)
+      );
+    }
+
+    /*
+     * Public website API:
+     *
+     * UpdateTemperature("WBC111F", 22.4);
+     */
+    window.UpdateTemperature = function (buildingID, value) {
+      const numericValue = Number(value);
+
+      if (!buildingID || !Number.isFinite(numericValue)) {
+        console.error(
+          "UpdateTemperature requires a building ID and numeric value.",
+          buildingID,
+          value
+        );
+
+        return false;
+      }
+
+      const payload = {
+        buildingId: String(buildingID),
+        value: numericValue
+      };
+
+      if (!window.fdUnityBridge.instance) {
+        window.fdUnityBridge.pendingTemperatureUpdates.push(payload);
+        return true;
+      }
+
+      sendTemperaturePayload(payload);
+      return true;
+    };
+
+    function flushPendingTemperatureUpdates() {
+      while (
+        window.fdUnityBridge.pendingTemperatureUpdates.length > 0
+      ) {
+        sendTemperaturePayload(
+          window.fdUnityBridge.pendingTemperatureUpdates.shift()
+        );
+      }
+    }
+
+    /*
+     * Called by FutureDecisionsDashboard.jslib whenever Unity selects
+     * a FacilityFocusTarget.
+     */
+    window.onUnityBuildingClicked = function (
+      buildingID,
+      displayName,
+      websiteRoute
+    ) {
+      const resolvedID = String(buildingID || "");
+      const resolvedName = String(displayName || resolvedID);
+
+      window.fdUnityBridge.selectedBuildingId = resolvedID;
+      selectedBuildingLabel.textContent = resolvedName;
+
+      setTemperatureStatus(
+        `Target updated to ${resolvedName}.`,
+        "success"
+      );
+
+      alert(
+        "Unity selected: " +
+        resolvedName +
+        " (" +
+        resolvedID +
+        ")"
+      );
+
+      console.log("Unity building selection", {
+        buildingID: resolvedID,
+        displayName: resolvedName,
+        websiteRoute: websiteRoute
+      });
+    };
+
+    temperatureForm.addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const buildingID =
+        window.fdUnityBridge.selectedBuildingId;
+
+      const value = Number(temperatureInput.value);
+
+      if (!buildingID) {
+        setTemperatureStatus(
+          "Select a facility in Unity before submitting.",
+          "error"
+        );
+        return;
+      }
+
+      if (!Number.isFinite(value)) {
+        setTemperatureStatus(
+          "Enter a valid numeric temperature.",
+          "error"
+        );
+        temperatureInput.focus();
+        return;
+      }
+
+      const wasAccepted =
+        window.UpdateTemperature(buildingID, value);
+
+      if (!wasAccepted) {
+        setTemperatureStatus(
+          "The temperature could not be sent.",
+          "error"
+        );
+        return;
+      }
+
+      if (window.fdUnityBridge.instance) {
+        setTemperatureStatus(
+          `Sent ${value.toFixed(1)} °C to ${buildingID}.`,
+          "success"
+        );
+      } else {
+        setTemperatureStatus(
+          `Queued ${value.toFixed(1)} °C while Unity loads.`,
+          "success"
+        );
+      }
+    });
+
+    function showBanner(message, type) {
+      const banner = document.createElement("div");
+      banner.className = "fd-banner-message";
+
+      if (type === "warning") {
+        banner.classList.add("fd-banner-warning");
+      }
+
+      if (type === "error") {
+        banner.classList.add("fd-banner-error");
+      }
+
+      banner.textContent = message;
+      bannerContainer.appendChild(banner);
+
+      if (type !== "error") {
+        window.setTimeout(() => {
+          banner.remove();
+        }, 5000);
+      }
+    }
+
+    function updateLoadingProgress(progress) {
+      const normalizedProgress = Math.max(0, Math.min(1, progress));
+      const percentage = Math.round(normalizedProgress * 100);
+
+      progressBar.style.width = `${percentage}%`;
+      progressPercent.textContent = `${percentage}%`;
+
+      if (percentage < 20) {
+        loadingStage.textContent = "Loading resources…";
+      } else if (percentage < 70) {
+        loadingStage.textContent = "Preparing site model…";
+      } else if (percentage < 95) {
+        loadingStage.textContent = "Starting dashboard…";
+      } else {
+        loadingStage.textContent = "Almost ready…";
+      }
+    }
+
+    function hideLoadingOverlay() {
+      loadingOverlay.classList.add("is-hidden");
+      loadingOverlay.setAttribute("aria-busy", "false");
+    }
+    
+
+    createUnityInstance(
+      canvas,
+      {
+        arguments: [],
+        dataUrl: "Build/{{{ DATA_FILENAME }}}",
+        frameworkUrl: "Build/{{{ FRAMEWORK_FILENAME }}}",
+
+#if USE_WASM
+        codeUrl: "Build/{{{ CODE_FILENAME }}}",
+#endif
+
+#if SYMBOLS_FILENAME
+        symbolsUrl: "Build/{{{ SYMBOLS_FILENAME }}}",
+#endif
+
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: {{{ JSON.stringify(COMPANY_NAME) }}},
+        productName: {{{ JSON.stringify(PRODUCT_NAME) }}},
+        productVersion: {{{ JSON.stringify(PRODUCT_VERSION) }}},
+        showBanner: showBanner,
+
+        // devicePixelRatio: 1,
+        // matchWebGLToCanvasSize: false,
+      },
+      updateLoadingProgress
+    )
+      .then((unityInstance) => {
+        window.fdUnityBridge.instance = unityInstance;
+
+        /*
+         * Initial JS -> Unity proof-of-concept value. It is stored for
+         * WBC111F and appears when that facility is selected.
+         */
+        window.UpdateTemperature("WBC111F", 20.0);
+
+        /*
+         * Any value entered while Unity was loading is sent afterwards,
+         * so the user's input takes precedence over the demo constant.
+         */
+        flushPendingTemperatureUpdates();
+
+        hideLoadingOverlay();
+        fullscreenButton.disabled = false;
+
+        setTemperatureStatus(
+          "Unity is ready. Select a building or submit to WBC111F.",
+          "success"
+        );
+
+        fullscreenButton.addEventListener("click", () => {
+          unityInstance.SetFullscreen(1);
+        });
+
+#if SHOW_DIAGNOSTICS
+        document
+          .getElementById("diagnostics-icon")
+          .addEventListener("click", () => {
+            unityDiagnostics.openDiagnosticsDiv(
+              unityInstance.GetMetricsInfo
+            );
+          });
+#endif
+      })
+      .catch((message) => {
+        loadingStage.textContent = "The dashboard could not be loaded.";
+        progressBar.style.width = "100%";
+        showBanner(String(message), "error");
+        console.error(message);
+      });
+  </script>
+</body>
+</html>
