@@ -1,0 +1,104 @@
+{
+    "toolVersion": "6.0.0",
+    "localTimestamp": "2026-10-08T08:57:27.2163980-03:00",
+    "scenePath": "Assets/Scenes/10_opt.unity",
+    "batchName": "Batch_20261008_085727_148",
+    "generatedRootName": "",
+    "batchRootGlobalObjectId": "",
+    "action": "ProcessMeshGeometry",
+    "originalDisposition": "Disable",
+    "keepTriangleRatio": -1.0,
+    "simplifierMode": "PcaPrimitiveDecomposition",
+    "geometryAlgorithm": "PcaPrimitiveDecomposition",
+    "qemTargetTriangleRatio": 0.3499999940395355,
+    "qemWeldToleranceRelative": 0.000009999999747378752,
+    "qemProtectOpenBoundaries": true,
+    "qemProtectMaterialBoundaries": true,
+    "qemProtectUvSeams": false,
+    "qemProtectSharpEdges": true,
+    "qemSharpEdgeAngle": 45.0,
+    "qemMaxFaceNormalDeviation": 70.0,
+    "clusterGridResolution": 24,
+    "clusterProtectSurfaceNormals": true,
+    "clusterNormalMergeAngle": 45.0,
+    "proxyWeldToleranceRelative": 0.000009999999747378752,
+    "proxyMaxSegmentLengthRelative": 0.20000000298023225,
+    "proxyMaxSegmentsPerComponent": 8,
+    "proxyElongatedAspectThreshold": 3.0,
+    "proxyPanelThicknessRatio": 0.11999999731779099,
+    "proxyMinimumComponentSizeRelative": 0.004999999888241291,
+    "proxyBeamCrossSectionSides": 4,
+    "proxyUsePrismsForElongatedComponents": true,
+    "proxySplitComponentsByMaterial": true,
+    "proxyPreserveSubmeshMaterials": true,
+    "searchText": "",
+    "prioritizeSearchMatches": false,
+    "reverted": false,
+    "revertedTimestamp": "",
+    "records": [
+        {
+            "originalName": "PEV-FencePost-CHS-sglCHS_post_1397_x_5mm_IfcColumn_7ea49590",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context___CLUSTERED/Connected_Clusters/03_fence_set_southwest/Category_pev-fencepost-chs/PEV-FencePost-CHS-sglCHS_post_1397_x_5mm_IfcColumn_7ea49590",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-a07e697f932b3dd39af83d8ed440bca3-1002641946-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 0,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context___CLUSTERED/Connected_Clusters/03_fence_set_southwest/Category_pev-fencepost-chs",
+            "originalPosition": {
+                "x": -99.50218200683594,
+                "y": -5.375,
+                "z": -136.23904418945313
+            },
+            "originalRotation": {
+                "x": 0.31097275018692019,
+                "y": 0.6350558996200562,
+                "z": 0.6350558996200562,
+                "w": -0.31097275018692019
+            },
+            "originalLossyScale": {
+                "x": 1.000000238418579,
+                "y": 1.0,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -99.50218200683594,
+                "y": -5.375,
+                "z": -136.23904418945313
+            },
+            "originalLocalRotation": {
+                "x": 0.31097275018692019,
+                "y": 0.6350558996200562,
+                "z": 0.6350558996200562,
+                "w": -0.31097275018692019
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 0.9999998807907105,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "450536",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 212,
+            "originalVertices": 216,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ProcessMeshGeometry",
+            "batchName": "Batch_20261008_085727_148",
+            "originalRenamedForPairing": false,
+            "committedByCleanup": false,
+            "originalDispositionApplied": "Disable",
+            "replacementType": "ProcessedMesh/PcaPrimitiveDecomposition",
+            "replacementName": "PEV-FencePost-CHS-sglCHS_post_1397_x_5mm_IfcColumn_7ea49590_opt_pca",
+            "replacementHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context___CLUSTERED/Connected_Clusters/03_fence_set_southwest/Category_pev-fencepost-chs/PEV-FencePost-CHS-sglCHS_post_1397_x_5mm_IfcColumn_7ea49590_opt_pca",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-a07e697f932b3dd39af83d8ed440bca3-368954072-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261008_085727_148/450536_PCA_PrimitiveProxy.asset",
+            "replacementTriangles": 56,
+            "replacementVertices": 100,
+            "status": "Success: processed replacement created (212 -> 56 tris)."
+        }
+    ]
+}

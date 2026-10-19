@@ -6,10 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/09_main_day.unity
-    guid: 70464004ea895ff25b83780a94862e41
-  - enabled: 1
-    path: Assets/Scenes/09_main_night.unity
-    guid: cdefd57143418f6c5ba2948a055e8957
+    path: Assets/Scenes/10_main_optimized.unity
+    guid: 5e76639fd5522908fac28a8e9df58bc8
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}

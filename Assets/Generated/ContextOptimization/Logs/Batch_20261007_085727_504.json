@@ -1,0 +1,79 @@
+{
+    "toolVersion": "3.0.0",
+    "localTimestamp": "2026-10-07T08:57:27.5736390-03:00",
+    "scenePath": "Assets/Scenes/10_main_optimized.unity",
+    "batchName": "Batch_20261007_085727_504",
+    "generatedRootName": "__OPTIMIZED_CONTEXT__",
+    "batchRootGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-610159341-0",
+    "action": "ReplaceLowPolyCylinder",
+    "originalDisposition": "Disable",
+    "keepTriangleRatio": 0.05000000074505806,
+    "simplifierMode": "FeatureAware",
+    "searchText": "",
+    "prioritizeSearchMatches": false,
+    "reverted": true,
+    "revertedTimestamp": "2026-10-07T08:57:32.4496850-03:00",
+    "records": [
+        {
+            "originalName": "Railing1100mm_Pipe_IfcRailing_16de98f5",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1100mm_Pipe_IfcRailing_16de98f5",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-6456754604765594146-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8684,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1042292",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 3400,
+            "originalVertices": 3604,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceLowPolyCylinder",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "LowPolyCylinder/6sides",
+            "replacementName": "Railing1100mm_Pipe_IfcRailing_16de98f5__CYLINDER_PROXY",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085727_504/Railing1100mm_Pipe_IfcRailing_16de98f5__CYLINDER_PROXY",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-385108253-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085727_504/1042292_OPT_Cylinder_6.asset",
+            "replacementTriangles": 24,
+            "replacementVertices": 28,
+            "status": "Success: low-poly cylinder replacement created."
+        }
+    ]
+}

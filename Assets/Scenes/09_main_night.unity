@@ -932019,16 +932019,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 313187495180469882, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: coverage.x
-      value: 150
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 313187495180469882, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: coverage.y
-      value: 150
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 313187495180469882, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: targetCamera
       value: 
       objectReference: {fileID: 330585545}
+    - target: {fileID: 313187495180469882, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
+      propertyPath: maximumEmissionRate
+      value: 2000
+      objectReference: {fileID: 0}
     - target: {fileID: 1075599858632649454, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -932075,15 +932079,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1503873301401167258, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8902609631606583869, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: ShapeModule.m_Scale.x
-      value: 150
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8902609631606583869, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: ShapeModule.m_Scale.z
-      value: 150
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 8902609631606583869, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: InitialModule.startSize.scalar
@@ -932095,7 +932099,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8902609631606583869, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: EmissionModule.rateOverTime.scalar
-      value: 1176
+      value: 1960
       objectReference: {fileID: 0}
     - target: {fileID: 8902609631606583869, guid: d900331a628b0496aa1722f602f2bc3b, type: 3}
       propertyPath: InitialModule.startSizeY.minMaxState

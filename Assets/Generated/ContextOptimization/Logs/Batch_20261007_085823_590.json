@@ -1,0 +1,933 @@
+{
+    "toolVersion": "3.0.0",
+    "localTimestamp": "2026-10-07T08:58:23.6617100-03:00",
+    "scenePath": "Assets/Scenes/10_main_optimized.unity",
+    "batchName": "Batch_20261007_085823_590",
+    "generatedRootName": "__OPTIMIZED_CONTEXT__",
+    "batchRootGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-234858953-0",
+    "action": "ReplaceSimplifiedMesh",
+    "originalDisposition": "Disable",
+    "keepTriangleRatio": 0.10000000149011612,
+    "simplifierMode": "FastAggressive",
+    "searchText": "",
+    "prioritizeSearchMatches": false,
+    "reverted": false,
+    "revertedTimestamp": "",
+    "records": [
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_5105794c",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_5105794c",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-3676748312599282830-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8493,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 32.041168212890628
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 32.041168212890628
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "997668",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_5105794c__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_5105794c__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-1380120487-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/997668_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 205,
+            "replacementVertices": 223,
+            "status": "Success: simplified replacement created (1,704 -> 205 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_5105794c2",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_5105794c2",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-5100853846855679480-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8496,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 33.84116744995117
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 33.84116744995117
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1004122",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_5105794c2__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_5105794c2__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-447961466-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1004122_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 205,
+            "replacementVertices": 223,
+            "status": "Success: simplified replacement created (1,704 -> 205 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_5105794c3",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_5105794c3",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-7653129420465953528-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8499,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 41.041168212890628
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 41.041168212890628
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1000921",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_5105794c3__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_5105794c3__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-766159634-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1000921_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 224,
+            "replacementVertices": 220,
+            "status": "Success: simplified replacement created (1,704 -> 224 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_ceccfa28",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_ceccfa28",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-3669766832666729808-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8509,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 35.641170501708987
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 35.641170501708987
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1016563",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_ceccfa28__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_ceccfa28__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-854731699-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1016563_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 205,
+            "replacementVertices": 223,
+            "status": "Success: simplified replacement created (1,704 -> 205 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_ceccfa282",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_ceccfa282",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-3871723239757739312-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8510,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 39.24116897583008
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 39.24116897583008
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1022963",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_ceccfa282__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_ceccfa282__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2052555697-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1022963_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 205,
+            "replacementVertices": 223,
+            "status": "Success: simplified replacement created (1,704 -> 205 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_ceccfa283",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_ceccfa283",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-5936829533734215746-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8512,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 37.44116973876953
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -10.067488670349121,
+                "y": -4.96875,
+                "z": 37.44116973876953
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1019763",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1704,
+            "originalVertices": 3186,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_ceccfa283__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_ceccfa283__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2058317064-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1019763_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 205,
+            "replacementVertices": 223,
+            "status": "Success: simplified replacement created (1,704 -> 205 tris)."
+        },
+        {
+            "originalName": "Railing1100mm_Pipe_IfcRailing_5105794c",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1100mm_Pipe_IfcRailing_5105794c",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-6863476895996655035-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8492,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1006457",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1500,
+            "originalVertices": 1590,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1100mm_Pipe_IfcRailing_5105794c__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1100mm_Pipe_IfcRailing_5105794c__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2003050602-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1006457_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 124,
+            "replacementVertices": 168,
+            "status": "Success: simplified replacement created (1,500 -> 124 tris)."
+        },
+        {
+            "originalName": "Railing1100mm_Pipe_IfcRailing_22540532",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1100mm_Pipe_IfcRailing_22540532",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2341609920758105507-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8513,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1029260",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1200,
+            "originalVertices": 1272,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1100mm_Pipe_IfcRailing_22540532__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1100mm_Pipe_IfcRailing_22540532__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-420541584-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1029260_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 122,
+            "replacementVertices": 136,
+            "status": "Success: simplified replacement created (1,200 -> 122 tris)."
+        },
+        {
+            "originalName": "Railing1100mm_Pipe_IfcRailing_225405322",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1100mm_Pipe_IfcRailing_225405322",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2176568162990013576-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8515,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 190.35484313964845,
+                "y": -58.67499923706055,
+                "z": -5.826510906219482
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1029405",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1200,
+            "originalVertices": 1272,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1100mm_Pipe_IfcRailing_225405322__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1100mm_Pipe_IfcRailing_225405322__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-1725400049-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1029405_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 122,
+            "replacementVertices": 136,
+            "status": "Success: simplified replacement created (1,200 -> 122 tris)."
+        },
+        {
+            "originalName": "Railing1100mm_Pipe_IfcRailing_5105794c2",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1100mm_Pipe_IfcRailing_5105794c2",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-3181400936605502621-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8498,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -6.002997398376465,
+                "y": -2.575000047683716,
+                "z": 31.912614822387697
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": -6.002997398376465,
+                "y": -2.575000047683716,
+                "z": 31.912614822387697
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1006304",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1122,
+            "originalVertices": 2048,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1100mm_Pipe_IfcRailing_5105794c2__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1100mm_Pipe_IfcRailing_5105794c2__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2023155616-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1006304_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 106,
+            "replacementVertices": 446,
+            "status": "Success: simplified replacement created (1,122 -> 106 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_a978fbf7",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_a978fbf7",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-5813250735193051603-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8514,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 79.8708267211914,
+                "y": -1.053656816482544,
+                "z": 58.3980827331543
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 79.8708267211914,
+                "y": -1.053656816482544,
+                "z": 58.3980827331543
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1028134",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1082,
+            "originalVertices": 1918,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_a978fbf7__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_a978fbf7__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-774369192-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1028134_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 106,
+            "replacementVertices": 234,
+            "status": "Success: simplified replacement created (1,082 -> 106 tris)."
+        },
+        {
+            "originalName": "Railing900mm_Pipe_2_IfcRailing_212ca2e0",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing900mm_Pipe_2_IfcRailing_212ca2e0",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-3062030530462975676-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8490,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 79.14643859863281,
+                "y": -1.068747639656067,
+                "z": 78.27449798583985
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 79.14643859863281,
+                "y": -1.068747639656067,
+                "z": 78.27449798583985
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "994414",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1040,
+            "originalVertices": 1778,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing900mm_Pipe_2_IfcRailing_212ca2e0__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing900mm_Pipe_2_IfcRailing_212ca2e0__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-1276709627-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/994414_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 104,
+            "replacementVertices": 228,
+            "status": "Success: simplified replacement created (1,040 -> 104 tris)."
+        },
+        {
+            "originalName": "Railing900mm_Pipe_2_IfcRailing_a978fbf7",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing900mm_Pipe_2_IfcRailing_a978fbf7",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-261974375449311786-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8511,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 81.38429260253906,
+                "y": -1.068747639656067,
+                "z": 59.137786865234378
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 81.38429260253906,
+                "y": -1.068747639656067,
+                "z": 59.137786865234378
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1026245",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1038,
+            "originalVertices": 1846,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing900mm_Pipe_2_IfcRailing_a978fbf7__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing900mm_Pipe_2_IfcRailing_a978fbf7__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-448414817-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1026245_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 102,
+            "replacementVertices": 226,
+            "status": "Success: simplified replacement created (1,038 -> 102 tris)."
+        },
+        {
+            "originalName": "Railing1000mm_Pipe_IfcRailing_b0b5a5f2",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing1000mm_Pipe_IfcRailing_b0b5a5f2",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-1626829955039498523-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8504,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 79.90816497802735,
+                "y": -1.068747639656067,
+                "z": 76.64250946044922
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 79.90816497802735,
+                "y": -1.068747639656067,
+                "z": 76.64250946044922
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1013362",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1036,
+            "originalVertices": 1734,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing1000mm_Pipe_IfcRailing_b0b5a5f2__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing1000mm_Pipe_IfcRailing_b0b5a5f2__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-2049836779-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1013362_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 96,
+            "replacementVertices": 229,
+            "status": "Success: simplified replacement created (1,036 -> 96 tris)."
+        },
+        {
+            "originalName": "Railing900mm_Pipe_2_IfcRailing_b0b5a5f2",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/Railing900mm_Pipe_2_IfcRailing_b0b5a5f2",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-6976573642097952275-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8503,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": 80.66895294189453,
+                "y": -1.068747639656067,
+                "z": 75.01256561279297
+            },
+            "originalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.000000238418579,
+                "z": 1.000000238418579
+            },
+            "originalLocalPosition": {
+                "x": 80.66895294189453,
+                "y": -1.068747639656067,
+                "z": 75.01256561279297
+            },
+            "originalLocalRotation": {
+                "x": -0.7071068286895752,
+                "y": 0.0,
+                "z": 0.0,
+                "w": 0.7071068286895752
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "1011703",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 1028,
+            "originalVertices": 1724,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FastAggressive",
+            "replacementName": "Railing900mm_Pipe_2_IfcRailing_b0b5a5f2__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085823_590/Railing900mm_Pipe_2_IfcRailing_b0b5a5f2__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-913260237-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085823_590/1011703_OPT_10pct_FastAggressive.asset",
+            "replacementTriangles": 104,
+            "replacementVertices": 227,
+            "status": "Success: simplified replacement created (1,028 -> 104 tris)."
+        }
+    ]
+}

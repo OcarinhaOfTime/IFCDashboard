@@ -1,0 +1,84 @@
+{
+    "toolVersion": "3.0.0",
+    "localTimestamp": "2026-10-07T08:56:41.8007190-03:00",
+    "scenePath": "Assets/Scenes/10_main_optimized.unity",
+    "batchName": "Batch_20261007_085641_733",
+    "generatedRootName": "__OPTIMIZED_CONTEXT__",
+    "batchRootGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-165000108-0",
+    "action": "ReplaceSimplifiedMesh",
+    "originalDisposition": "Disable",
+    "keepTriangleRatio": 0.05000000074505806,
+    "simplifierMode": "FeatureAware",
+    "searchText": "",
+    "prioritizeSearchMatches": false,
+    "reverted": false,
+    "revertedTimestamp": "",
+    "records": [
+        {
+            "originalName": "PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce2",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce2",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-52582684882248165-0",
+            "originalActiveSelf": true,
+            "originalActiveInHierarchy": true,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8677,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -96.48460388183594,
+                "y": -5.434999942779541,
+                "z": -76.62297058105469
+            },
+            "originalRotation": {
+                "x": 0.4198465049266815,
+                "y": 0.5689718127250671,
+                "z": 0.5689718127250671,
+                "w": -0.4198465049266815
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalLocalPosition": {
+                "x": -96.48460388183594,
+                "y": -5.434999942779541,
+                "z": -76.62297058105469
+            },
+            "originalLocalRotation": {
+                "x": 0.4198465049266815,
+                "y": 0.5689718127250671,
+                "z": 0.5689718127250671,
+                "w": -0.4198465049266815
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "890203",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 15336,
+            "originalVertices": 42814,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ReplaceSimplifiedMesh",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "SimplifiedMesh/FeatureAware",
+            "replacementName": "PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce2__SIMPLIFIED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_085641_733/PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce2__SIMPLIFIED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-5e76639fd5522908fac28a8e9df58bc8-1720619577-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_085641_733/890203_OPT_5pct_FeatureAware.asset",
+            "replacementTriangles": 8997,
+            "replacementVertices": 6879,
+            "status": "Success: simplified replacement created (15,336 -> 8,997 tris)."
+        }
+    ]
+}

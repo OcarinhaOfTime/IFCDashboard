@@ -62,7 +62,7 @@ Material:
     - _BottomPadding: 0.65
     - _BuildingMaxY: 10
     - _BuildingMinY: -1
-    - _EmissionStrength: 0
+    - _EmissionStrength: 0.09
     - _GridCellHeight: 3
     - _GridCellWidth: 3
     - _GridPadding: 0.05

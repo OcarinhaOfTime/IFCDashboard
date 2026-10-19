@@ -1,0 +1,106 @@
+{
+    "toolVersion": "4.0.0",
+    "localTimestamp": "2026-10-07T15:17:09.9507200-03:00",
+    "scenePath": "Assets/Scenes/10_main_test_opt.unity",
+    "batchName": "Batch_20261007_151709_884",
+    "generatedRootName": "__OPTIMIZED_CONTEXT__",
+    "batchRootGlobalObjectId": "GlobalObjectId_V1-2-cb6863f8267c5b459939559031fae9ce-1438617983-0",
+    "action": "ProcessMeshGeometry",
+    "originalDisposition": "Disable",
+    "keepTriangleRatio": -1.0,
+    "simplifierMode": "PcaPrimitiveDecomposition",
+    "geometryAlgorithm": "PcaPrimitiveDecomposition",
+    "qemTargetTriangleRatio": 0.3499999940395355,
+    "qemWeldToleranceRelative": 0.000009999999747378752,
+    "qemProtectOpenBoundaries": true,
+    "qemProtectMaterialBoundaries": true,
+    "qemProtectUvSeams": false,
+    "qemProtectSharpEdges": true,
+    "qemSharpEdgeAngle": 45.0,
+    "qemMaxFaceNormalDeviation": 70.0,
+    "clusterGridResolution": 24,
+    "clusterProtectSurfaceNormals": true,
+    "clusterNormalMergeAngle": 45.0,
+    "proxyWeldToleranceRelative": 0.000009999999747378752,
+    "proxyMaxSegmentLengthRelative": 0.20000000298023225,
+    "proxyMaxSegmentsPerComponent": 8,
+    "proxyElongatedAspectThreshold": 3.0,
+    "proxyPanelThicknessRatio": 0.11999999731779099,
+    "proxyMinimumComponentSizeRelative": 0.004999999888241291,
+    "proxyBeamCrossSectionSides": 4,
+    "proxyUsePrismsForElongatedComponents": true,
+    "proxySplitComponentsByMaterial": true,
+    "proxyPreserveSubmeshMaterials": true,
+    "searchText": "",
+    "prioritizeSearchMatches": false,
+    "reverted": true,
+    "revertedTimestamp": "2026-10-07T15:17:51.5578400-03:00",
+    "records": [
+        {
+            "originalName": "PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce",
+            "originalHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context/PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce",
+            "originalGlobalObjectId": "GlobalObjectId_V1-2-cb6863f8267c5b459939559031fae9ce-6153892073710653288-0",
+            "originalActiveSelf": false,
+            "originalActiveInHierarchy": false,
+            "originalLayer": 0,
+            "originalTag": "Untagged",
+            "originalSiblingIndex": 8676,
+            "originalParentHierarchyPath": "cib_site/CIB_Site_Dashboard_Hierarchy/02_Site_Context",
+            "originalPosition": {
+                "x": -128.2080841064453,
+                "y": -5.434999942779541,
+                "z": -86.41383361816406
+            },
+            "originalRotation": {
+                "x": -0.5689718127250671,
+                "y": 0.4198465049266815,
+                "z": 0.4198465049266815,
+                "w": 0.5689718127250671
+            },
+            "originalLossyScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalLocalPosition": {
+                "x": -128.2080841064453,
+                "y": -5.434999942779541,
+                "z": -86.41383361816406
+            },
+            "originalLocalRotation": {
+                "x": -0.5689718127250671,
+                "y": 0.4198465049266815,
+                "z": 0.4198465049266815,
+                "w": 0.5689718127250671
+            },
+            "originalLocalScale": {
+                "x": 1.0,
+                "y": 1.0,
+                "z": 1.0
+            },
+            "originalRendererEnabled": true,
+            "sourceMeshName": "890203",
+            "sourceMeshAssetPath": "Assets/Models/cib_site.glb",
+            "originalTriangles": 15336,
+            "originalVertices": 42814,
+            "sourceMaterialAssetPaths": [
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat",
+                "Assets/Materials/Fences.mat"
+            ],
+            "requestedAction": "ProcessMeshGeometry",
+            "originalDispositionApplied": "Disable",
+            "replacementType": "ProcessedMesh/PcaPrimitiveDecomposition",
+            "replacementName": "PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce__PROCESSED",
+            "replacementHierarchyPath": "__OPTIMIZED_CONTEXT__/Batch_20261007_151709_884/PEV-site-MUGA-combination_goalgoal_only_IfcBuildingElementProxy_5afc1dce__PROCESSED",
+            "replacementGlobalObjectId": "GlobalObjectId_V1-2-cb6863f8267c5b459939559031fae9ce-895520540-0",
+            "replacementMeshAssetPath": "Assets/Generated/ContextOptimization/Meshes/Batch_20261007_151709_884/890203_PCA_PrimitiveProxy.asset",
+            "replacementTriangles": 492,
+            "replacementVertices": 858,
+            "status": "Success: processed replacement created (15,336 -> 492 tris)."
+        }
+    ]
+}
